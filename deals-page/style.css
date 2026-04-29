@@ -1,0 +1,124 @@
+<style>
+
+/* REMOVE RED CLICK ISSUE */
+a, a:hover, a:visited, a:active{
+text-decoration:none !important;
+}
+
+/* GRID */
+.deal-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+}
+
+/* CARD */
+.deal-card{
+border-radius:18px;
+overflow:hidden;
+background:#ffffff;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s ease;
+display:flex;
+flex-direction:column;
+color:#222;
+}
+
+/* IMAGE */
+.deal-card .img{
+height:160px;
+background-size:cover;
+background-position:center;
+}
+
+/* CONTENT */
+.deal-card .content{
+padding:16px;
+text-align:center;
+}
+
+/* TITLE */
+.deal-card h3{
+font-size:17px;
+font-weight:700;
+margin:6px 0;
+}
+
+/* BUTTON */
+.deal-card span{
+display:inline-block;
+margin-top:10px;
+background:#ff9800;
+color:#fff;
+padding:10px 18px;
+border-radius:25px;
+font-size:13px;
+font-weight:700;
+}
+
+/* HOVER */
+.deal-card:hover{
+transform:translateY(-6px);
+box-shadow:0 18px 40px rgba(0,0,0,0.15);
+}
+
+.deal-card:hover span{
+background:#fb8c00;
+transform:scale(1.05);
+}
+
+/* BACK BUTTON FIXED */
+.back-btn{
+display:inline-block;
+background:#111;
+color:#fff !important;
+padding:12px 24px;
+border-radius:30px;
+font-size:15px;
+font-weight:700;
+text-decoration:none !important;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* TABLET */
+@media(max-width:900px){
+.deal-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+/* MOBILE */
+@media(max-width:500px){
+
+.deal-grid{
+grid-template-columns:1fr;
+gap:16px;
+}
+
+.deal-card{
+background:linear-gradient(180deg,#bbf7d0,#6ee7b7);
+}
+
+.deal-card .img{
+height:140px;
+}
+
+.deal-card .content{
+background:#fff;
+margin-top:-12px;
+border-radius:16px;
+}
+
+.deal-card h3{
+font-size:16px;
+font-weight:800;
+}
+
+.deal-card span{
+font-size:14px;
+padding:11px 20px;
+}
+
+}
+
+</style>
